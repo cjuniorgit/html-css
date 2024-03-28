@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+    <style>
+      body{
+        font: normal 1em arial, helvetica, sans-serif;
+      }
+      a{
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(124, 112, 112);
+      }
+      a:visited{
+        color: rgb(173, 101, 240);
+      }
+      a:hover{
+       text-decoration: underline;
+      }
+      .especial:hover{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+      }
+      .especial::before{
+        content:'⭆';
+        font-weight: lighter;
+      }
+      .especial::after{
+        content: '⭅';
+        font-weight: lighter;
+      }
+
+    </style>
+</head>
+<body>
+<h1>personalizando um link</h1>
+<p>para aprender html5 e css3, acesse o <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf"> github do guanabara</a></p>
+<p>se quiser conhecer sobre os padroes, visite o site do <a href="lalallaa">escritorio do w3c</a></p>
+<p>para acompahar os cursos, acesse o <a href="sdasf" class="especial">canal do cursoemvideo</a></p>
+</body>
+</html>
