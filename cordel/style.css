@@ -42,10 +42,24 @@ section.normal{
 }
 section.imagem{
     background-color: rgba(96, 96, 96, 0.619);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p{
-    background-color: rgb(93, 93, 93);
+    background-color: rgba(107, 107, 107, 0.527);
     width: 400px;
+    font-size: 2em;
+}
+p{
+    font-size: 1.5em;
+}
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
 footer{
     background-color: black;
