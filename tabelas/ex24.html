@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas grandes</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        position: relative;
+    }
+    td, th{
+        
+        border: 1px solid black;
+        width: 250px;
+        padding: 5px;
+        
+    }
+    thead > tr > th /* função para os titulos grudarem na tela obs: table tem que estar em posição relativa*/{
+        position: sticky;
+        top: -1px;
+        background-color: darkgray;
+        color: white;
+    }
+    tfoot > t{
+        width: 250px;
+    }
+    .legal{
+        background-color: darkgray;
+        font-size: large;
+    }
+    tbody > tr:nth-child(even){
+        background-color: lightgray;
+    }
+    tbody > tr:nth-child(odd){
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>uso de tabelas grandes</h1>
+
+    <!--
+        anatomia para tabelas grandes
+        table
+            caption
+            thead
+            tr, td, th = titulo
+            tfoot
+            tr,td,th
+    -->
+    <table>
+        <caption>detalhes da população do brasil</caption>
+        <thead class="legal">
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>Região</th>
+                <th>Número de Municípios</th>
+                <th>Número de Habitantes</th>
+                <th>Média de Habitantes por Município</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Minas Gerais</td>
+                <td>Sudeste</td>
+                <td>853</td>
+                <td>20 539 989</td>
+                <td>24 079,71</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>São Paulo</td>
+                <td>Sudeste</td>
+                <td>645</td>
+                <td>44 411 238</td>
+                <td>68 854,63</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio Grande do Sul</td>
+                <td>Sul</td>
+                <td>497</td>
+                <td>10 882 965</td>
+                <td>21 897,31</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td>Nordeste</td>
+                <td>417</td>
+                <td>14 141 626</td>
+                <td>33 912,77</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td>Sul</td>
+                <td>399</td>
+                <td>11 444 380</td>
+                <td>28 682,66</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Santa Catarina</td>
+                <td>Sul</td>
+                <td>295</td>
+                <td>7 610 361</td>
+                <td>25 797,83</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Goiás</td>
+                <td>Centro-Oeste</td>
+                <td>246</td>
+                <td>7 056 495</td>
+                <td>28 684,94</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Piauí</td>
+                <td>Nordeste</td>
+                <td>224</td>
+                <td>3 271 199</td>
+                <td>14 603,57</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Paraíba</td>
+                <td>Nordeste</td>
+                <td>223</td>
+                <td>3 974 687</td>
+                <td>17 823,71</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Maranhão</td>
+                <td>Nordeste</td>
+                <td>217</td>
+                <td>6 776 699</td>
+                <td>31 229,03</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Pernambuco</td>
+                <td>Nordeste</td>
+                <td>184</td>
+                <td>9 058 931</td>
+                <td>49 233,32</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Ceará</td>
+                <td>Nordeste</td>
+                <td>184</td>
+                <td>8 794 957</td>
+                <td>47 798,68</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Rio Grande do Norte</td>
+                <td>Nordeste</td>
+                <td>167</td>
+                <td>3 302 729</td>
+                <td>19 776,82</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Pará</td>
+                <td>Norte</td>
+                <td>144</td>
+                <td>8 120 131</td>
+                <td>56 389,80</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Mato Grosso</td>
+                <td>Centro-Oeste</td>
+                <td>142</td>
+                <td>3 658 649</td>
+                <td>25 765,13</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Tocantins</td>
+                <td>Norte</td>
+                <td>139</td>
+                <td>1 511 460</td>
+                <td>10 873,81</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Alagoas</td>
+                <td>Nordeste</td>
+                <td>102</td>
+                <td>3 127 683</td>
+                <td>30 663,56</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Rio de Janeiro</td>
+                <td>Sudeste</td>
+                <td>92</td>
+                <td>16 055 174</td>
+                <td>174 512,76</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Mato Grosso do Sul</td>
+                <td>Centro-Oeste</td>
+                <td>79</td>
+                <td>2 757 013</td>
+                <td>34 898,90</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Espírito Santo</td>
+                <td>Sudeste</td>
+                <td>78</td>
+                <td>3 833 712</td>
+                <td>49 150,15</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Sergipe</td>
+                <td>Nordeste</td>
+                <td>75</td>
+                <td>2 210 004</td>
+                <td>29 466,72</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Amazonas</td>
+                <td>Norte</td>
+                <td>62</td>
+                <td>3 941 613</td>
+                <td>63 574,40</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondônia</td>
+                <td>Norte</td>
+                <td>52</td>
+                <td>1 581 196</td>
+                <td>30 407,62</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Acre</td>
+                <td>Norte</td>
+                <td>22</td>
+                <td>830 018</td>
+                <td>37 728,09</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Amapá</td>
+                <td>Norte</td>
+                <td>16</td>
+                <td>733 759</td>
+                <td>45 859,94</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Roraima</td>
+                <td>Norte</td>
+                <td>15</td>
+                <td>636 707</td>
+                <td>42 447,13</td>
+            </tr>
+        </tbody>
+        <tfoot class="legal">
+            <tr>
+                <td colspan="4">Soma dos habitantes</td> <!--importante -->
+                <td>203 080 756</td>
+                <td>36 459,74</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
