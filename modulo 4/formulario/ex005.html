@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>
+                sexo
+            </legend>
+            <input type="radio" name="sexo" id="imas">
+            <label for="imas"> masculino</label>
+            <input type="radio" name="sexo" id="ifem">
+            <label for="ifem"> feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                esportes favoritos
+            </legend>
+            <input type="radio" name="fut" id="ifut">
+            <label for="ifut">futebol</label>
+            <input type="radio" name="basquete" id="ibasquete">
+            <label for="ibasquete">basquete</label>
+            <input type="radio" name="tenis" id="itenis">
+            <label for="itenis">tenis</label>
+            <input type="radio" name="natacao" id="inatacao">
+            <label for="ifut">natação</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar">
+        </p>
+    </form>
+</body>
+</html>
