@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro.js">
+        <label for="iest">estado:</label>
+        <select name="est" id="iest">
+            <optgroup label="regiao nordeste">
+                <option value="pe">pernambuco</option>
+                <option value="ba">bahia</option>
+                <option value="sal">salvador</option>
+            </optgroup>
+            <optgroup label="regiao sudeste">
+                <option value="mg">minas gerais</option>
+                <option value="rj">rio de janeiro</option>
+                <option value="sp">sao paulo</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="iprof"> profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+           
+        </p>
+        <datalist id="lstprof">
+            <option value="adm">administrador</option>
+            <option value="prof">professor</option>
+            <option value="dev">desenvolvedor</option>
+        </datalist>
+        <p>
+            <label for="imsg">mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+        
+</body>
+</html>
